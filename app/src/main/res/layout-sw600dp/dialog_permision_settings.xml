@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                tools:ignore="MissingDefaultResource">
+
+    <TextView
+            android:id="@+id/tvLable"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:background="@color/white"
+            android:fontFamily="@font/sharp_sans_medium"
+            android:gravity="center"
+            android:text="@string/txt_permission_alert_title"
+            android:textColor="@color/app_default_color"
+            android:textSize="@dimen/_7sdp"></TextView>
+
+    <TextView
+            android:id="@+id/etMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvLable"
+            android:background="@color/white"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:fontFamily="@font/sharp_sans_reg"
+            android:text="@string/txt_permission_alert_desc"
+            android:textSize="@dimen/_6sdp"/>
+
+    <Button
+            android:id="@+id/btnSettings"
+            style="@style/BgButton"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_below="@id/etMessage"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/_10sdp"
+            android:fontFamily="@font/sharp_sans_medium"
+            android:text="@string/txt_settings"
+            android:textSize="@dimen/_6sdp"/>
+
+</RelativeLayout>

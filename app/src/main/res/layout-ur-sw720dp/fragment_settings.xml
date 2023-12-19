@@ -1,0 +1,922 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="MissingDefaultResource">
+
+    <ScrollView
+        android:id="@+id/svMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/llSub"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvMonday"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/sharp_sans_medium"
+                    android:text="@string/txt_setting_monday"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/_6sdp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/tvMonday"
+                    android:layout_toRightOf="@+id/toggleBtnMonday">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/rlMondayStartTime"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            android:background="@drawable/bg_gray_without_border">
+
+                            <TextView
+                                android:id="@+id/tvMondayStartTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/sharp_sans_reg"
+                                android:paddingRight="@dimen/_5sdp"
+                                android:text="@string/txt_setting_start_time"
+                                android:textColor="@color/gray_dark"
+                                android:textSize="@dimen/_6sdp" />
+
+                            <ImageView
+                                android:id="@+id/ivMondayArrowStart"
+                                android:layout_width="@dimen/_5sdp"
+                                android:layout_height="@dimen/_3sdp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:background="@drawable/ic_down_arrow_gry" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rlMondayEndTime"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:background="@drawable/bg_gray_without_border">
+
+                            <TextView
+                                android:id="@+id/tvMondayEndTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/sharp_sans_reg"
+                                android:paddingRight="@dimen/_5sdp"
+                                android:text="@string/txt_setting_end_time"
+                                android:textColor="@color/gray_dark"
+                                android:textSize="@dimen/_6sdp" />
+
+                            <ImageView
+                                android:id="@+id/ivMondayArrowEnd"
+                                android:layout_width="@dimen/_5sdp"
+                                android:layout_height="@dimen/_3sdp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:background="@drawable/ic_down_arrow_gry" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <ToggleButton
+                    android:id="@+id/toggleBtnMonday"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_toggle"
+                    android:checked="false"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn="" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvTuesday"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/sharp_sans_medium"
+                    android:text="@string/txt_setting_tuesday"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/_6sdp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/tvTuesday"
+                    android:layout_toRightOf="@+id/toggleBtnTuesday">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/rlTuesdayStartTime"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            android:background="@drawable/bg_gray_without_border">
+
+                            <TextView
+                                android:id="@+id/tvTuesdayStartTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/sharp_sans_reg"
+                                android:paddingRight="@dimen/_5sdp"
+                                android:text="@string/txt_setting_start_time"
+                                android:textColor="@color/gray_dark"
+                                android:textSize="@dimen/_6sdp" />
+
+                            <ImageView
+                                android:id="@+id/ivTuesdayArrowStart"
+                                android:layout_width="@dimen/_5sdp"
+                                android:layout_height="@dimen/_3sdp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:background="@drawable/ic_down_arrow_gry" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rlTuesdayEndTime"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:background="@drawable/bg_gray_without_border">
+
+                            <TextView
+                                android:id="@+id/tvTuesdayEndTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/sharp_sans_reg"
+                                android:paddingRight="@dimen/_5sdp"
+                                android:text="@string/txt_setting_end_time"
+                                android:textColor="@color/gray_dark"
+                                android:textSize="@dimen/_6sdp" />
+
+                            <ImageView
+                                android:id="@+id/ivTuesdayArrowEnd"
+                                android:layout_width="@dimen/_5sdp"
+                                android:layout_height="@dimen/_3sdp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:background="@drawable/ic_down_arrow_gry" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <ToggleButton
+                    android:id="@+id/toggleBtnTuesday"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_toggle"
+                    android:checked="false"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn="" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvWednesday"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/sharp_sans_medium"
+                    android:text="@string/txt_setting_wednesday"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/_6sdp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/tvWednesday"
+                    android:layout_toRightOf="@+id/toggleBtnWednesday">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/rlWednesdayStartTime"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            android:background="@drawable/bg_gray_without_border">
+
+                            <TextView
+                                android:id="@+id/tvWednesdayStartTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/sharp_sans_reg"
+                                android:paddingRight="@dimen/_5sdp"
+                                android:text="@string/txt_setting_start_time"
+                                android:textColor="@color/gray_dark"
+                                android:textSize="@dimen/_6sdp" />
+
+                            <ImageView
+                                android:id="@+id/ivWednesdayArrowStart"
+                                android:layout_width="@dimen/_5sdp"
+                                android:layout_height="@dimen/_3sdp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:background="@drawable/ic_down_arrow_gry" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rlWednesdayEndTime"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:background="@drawable/bg_gray_without_border">
+
+                            <TextView
+                                android:id="@+id/tvWednesdayEndTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/sharp_sans_reg"
+                                android:paddingRight="@dimen/_5sdp"
+                                android:text="@string/txt_setting_end_time"
+                                android:textColor="@color/gray_dark"
+                                android:textSize="@dimen/_6sdp" />
+
+                            <ImageView
+                                android:id="@+id/ivWednesdayArrowEnd"
+                                android:layout_width="@dimen/_5sdp"
+                                android:layout_height="@dimen/_3sdp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:background="@drawable/ic_down_arrow_gry" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <ToggleButton
+                    android:id="@+id/toggleBtnWednesday"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_toggle"
+                    android:checked="false"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn="" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvThursday"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/sharp_sans_medium"
+                    android:text="@string/txt_setting_thursday"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/_6sdp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/tvThursday"
+                    android:layout_toRightOf="@+id/toggleBtnThursday">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/rlThursdayStartTime"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            android:background="@drawable/bg_gray_without_border">
+
+                            <TextView
+                                android:id="@+id/tvThursdayStartTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/sharp_sans_reg"
+                                android:paddingRight="@dimen/_5sdp"
+                                android:text="@string/txt_setting_start_time"
+                                android:textColor="@color/gray_dark"
+                                android:textSize="@dimen/_6sdp" />
+
+                            <ImageView
+                                android:id="@+id/ivThursdayArrowStart"
+                                android:layout_width="@dimen/_5sdp"
+                                android:layout_height="@dimen/_3sdp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:background="@drawable/ic_down_arrow_gry" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rlThursdayEndTime"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:background="@drawable/bg_gray_without_border">
+
+                            <TextView
+                                android:id="@+id/tvThursdayEndTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/sharp_sans_reg"
+                                android:paddingRight="@dimen/_5sdp"
+                                android:text="@string/txt_setting_end_time"
+                                android:textColor="@color/gray_dark"
+                                android:textSize="@dimen/_6sdp" />
+
+                            <ImageView
+                                android:id="@+id/ivThursdayArrowEnd"
+                                android:layout_width="@dimen/_5sdp"
+                                android:layout_height="@dimen/_3sdp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:background="@drawable/ic_down_arrow_gry" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <ToggleButton
+                    android:id="@+id/toggleBtnThursday"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_toggle"
+                    android:checked="false"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn="" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvFriday"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/sharp_sans_medium"
+                    android:text="@string/txt_setting_friday"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/_6sdp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/tvFriday"
+                    android:layout_toRightOf="@+id/toggleBtnFriday">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/rlFridayStartTime"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            android:background="@drawable/bg_gray_without_border">
+
+                            <TextView
+                                android:id="@+id/tvFridayStartTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/sharp_sans_reg"
+                                android:paddingRight="@dimen/_5sdp"
+                                android:text="@string/txt_setting_start_time"
+                                android:textColor="@color/gray_dark"
+                                android:textSize="@dimen/_6sdp" />
+
+                            <ImageView
+                                android:id="@+id/ivFridayArrowStart"
+                                android:layout_width="@dimen/_5sdp"
+                                android:layout_height="@dimen/_3sdp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:background="@drawable/ic_down_arrow_gry" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rlFridayEndTime"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:background="@drawable/bg_gray_without_border">
+
+                            <TextView
+                                android:id="@+id/tvFridayEndTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/sharp_sans_reg"
+                                android:paddingRight="@dimen/_5sdp"
+                                android:text="@string/txt_setting_end_time"
+                                android:textColor="@color/gray_dark"
+                                android:textSize="@dimen/_6sdp" />
+
+                            <ImageView
+                                android:id="@+id/ivFridayArrowEnd"
+                                android:layout_width="@dimen/_5sdp"
+                                android:layout_height="@dimen/_3sdp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:background="@drawable/ic_down_arrow_gry" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <ToggleButton
+                    android:id="@+id/toggleBtnFriday"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_toggle"
+                    android:checked="false"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn="" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvSaturday"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/sharp_sans_medium"
+                    android:text="@string/txt_setting_saturday"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/_6sdp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/tvSaturday"
+                    android:layout_toRightOf="@+id/toggleBtnSaturday">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/rlSaturdayStartTime"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            android:background="@drawable/bg_gray_without_border">
+
+                            <TextView
+                                android:id="@+id/tvSaturdayStartTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/sharp_sans_reg"
+                                android:paddingRight="@dimen/_5sdp"
+                                android:text="@string/txt_setting_start_time"
+                                android:textColor="@color/gray_dark"
+                                android:textSize="@dimen/_6sdp" />
+
+                            <ImageView
+                                android:id="@+id/ivSaturdayArrowStart"
+                                android:layout_width="@dimen/_5sdp"
+                                android:layout_height="@dimen/_3sdp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:background="@drawable/ic_down_arrow_gry" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rlSaturdayEndTime"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:background="@drawable/bg_gray_without_border">
+
+                            <TextView
+                                android:id="@+id/tvSaturdayEndTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/sharp_sans_reg"
+                                android:paddingRight="@dimen/_5sdp"
+                                android:text="@string/txt_setting_end_time"
+                                android:textColor="@color/gray_dark"
+                                android:textSize="@dimen/_6sdp" />
+
+                            <ImageView
+                                android:id="@+id/ivSaturdayArrowEnd"
+                                android:layout_width="@dimen/_5sdp"
+                                android:layout_height="@dimen/_3sdp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_marginBottom="17dp"
+                                android:background="@drawable/ic_down_arrow_gry" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <ToggleButton
+                    android:id="@+id/toggleBtnSaturday"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_toggle"
+                    android:checked="false"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn="" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvSunday"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/sharp_sans_medium"
+                    android:text="@string/txt_setting_sunday"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/_6sdp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/tvSunday"
+                    android:layout_toRightOf="@+id/toggleBtnSunday">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+
+                        <RelativeLayout
+                            android:id="@+id/rlSundayStartTime"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            android:background="@drawable/bg_gray_without_border">
+
+                            <TextView
+                                android:id="@+id/tvSundayStartTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/sharp_sans_reg"
+                                android:paddingRight="@dimen/_5sdp"
+                                android:text="@string/txt_setting_start_time"
+                                android:textColor="@color/gray_dark"
+                                android:textSize="@dimen/_6sdp" />
+
+                            <ImageView
+                                android:id="@+id/ivSundayArrowStart"
+                                android:layout_width="@dimen/_5sdp"
+                                android:layout_height="@dimen/_3sdp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:background="@drawable/ic_down_arrow_gry" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/rlSundayEndTime"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:background="@drawable/bg_gray_without_border">
+
+                            <TextView
+                                android:id="@+id/tvSundayEndTime"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/sharp_sans_reg"
+                                android:paddingRight="@dimen/_5sdp"
+                                android:text="@string/txt_setting_end_time"
+                                android:textColor="@color/gray_dark"
+                                android:textSize="@dimen/_6sdp" />
+
+                            <ImageView
+                                android:id="@+id/ivSundayArrowEnd"
+                                android:layout_width="@dimen/_5sdp"
+                                android:layout_height="@dimen/_3sdp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:background="@drawable/ic_down_arrow_gry" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <ToggleButton
+                    android:id="@+id/toggleBtnSunday"
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_toggle"
+                    android:checked="false"
+                    android:text=""
+                    android:textOff=""
+                    android:textOn="" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvTimePerSection"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/sharp_sans_medium"
+                    android:text="@string/txt_setting_time_per_section"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/_6sdp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_toLeftOf="@+id/tvTimePerSection">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/etTimePerSection"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            android:background="@drawable/bg_white_with_gray_border"
+                            android:fontFamily="@font/sharp_sans_reg"
+                            android:gravity="center|right"
+                            android:hint="20"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:paddingRight="@dimen/_7sdp"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/gray_dark"
+                            android:textSize="@dimen/_6sdp" />
+
+
+                        <TextView
+                            android:id="@+id/tvTimePerSectionMin"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:fontFamily="@font/sharp_sans_reg"
+                            android:gravity="center_vertical"
+                            android:text="@string/txt_minutes"
+                            android:textColor="@color/gray_dark"
+                            android:textSize="@dimen/_5sdp" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvLapPerSection"
+                    android:layout_width="@dimen/_70sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="@font/sharp_sans_medium"
+                    android:text="@string/txt_setting_lap_per_section"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/_6sdp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:layout_toLeftOf="@+id/tvLapPerSection">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/etLapPerSection"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            android:background="@drawable/bg_white_with_gray_border"
+                            android:fontFamily="@font/sharp_sans_reg"
+                            android:gravity="center|right"
+                            android:hint="10"
+                            android:inputType="number"
+                            android:maxLines="1"
+                            android:paddingRight="@dimen/_7sdp"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/gray_dark"
+                            android:textSize="@dimen/_6sdp" />
+
+
+                        <TextView
+                            android:id="@+id/tvLapPerSectionMin"
+                            android:layout_width="@dimen/_100sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/_15sdp"
+                            android:fontFamily="@font/sharp_sans_reg"
+                            android:gravity="center_vertical"
+                            android:text="@string/txt_minutes"
+                            android:textColor="@color/gray_dark"
+                            android:textSize="@dimen/_5sdp" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/llBottomButtons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnUpdate"
+                    style="@style/BgButton"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:text="@string/txt_update"
+                    android:textSize="@dimen/_6sdp" />
+
+                <Button
+                    android:id="@+id/btnSetAllDays"
+                    style="@style/BgButton"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:text="@string/txt_set_all_days"
+                    android:textSize="@dimen/_6sdp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

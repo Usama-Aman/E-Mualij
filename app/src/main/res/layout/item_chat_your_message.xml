@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+        android:id="@+id/llParent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/ch_item_parent_margin"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/llChild"
+            style="@style/chatItemParentBg"
+            android:layout_marginRight="@dimen/ch_item_margin_frm_profile"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/llValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/ch_item_inner_view_margin"
+                    android:layout_marginRight="@dimen/ch_item_inner_minus_margin"
+                    android:background="@drawable/bg_chat_item_rounded_green_right">
+
+                    <TextView
+                        android:id="@+id/tvMsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sharp_sans_medium"
+                        android:padding="@dimen/_8sdp"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_12sdp" />
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/ivCurve"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/ic_chat_curve_green_right" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llSentTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvSentTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:fontFamily="@font/sharp_sans_reg"
+                    android:text=""
+                    android:textColor="@color/gray_dark"
+                    android:textSize="@dimen/_5sdp" />
+
+                <ImageView
+                    android:id="@+id/ivSeen"
+                    android:layout_width="@dimen/_5sdp"
+                    android:layout_height="@dimen/_4sdp"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="gone"
+                    android:background="@drawable/ic_chat_single_tick" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivProfile"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:src="@drawable/profile_placeholder" />
+
+    </LinearLayout>
+
+</LinearLayout>

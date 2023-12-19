@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rlMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:ignore="MissingDefaultResource">
+
+    <RelativeLayout
+        android:id="@+id/rlBg"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/_20sdp"
+        android:background="@color/color_gray_more_lighter">
+
+        <RelativeLayout
+            android:id="@+id/rlHeader"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_25sdp"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/tvMedicineTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:fontFamily="@font/sharp_sans_bold"
+                android:text="@string/txt_report_patient_title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_7sdp" />
+
+            <ImageView
+                android:id="@+id/ivCross"
+                android:layout_width="@dimen/_7sdp"
+                android:layout_height="@dimen/_7sdp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/_7sdp"
+                android:background="@drawable/ic_cross_png"
+                android:backgroundTint="@color/white" />
+
+            <RelativeLayout
+                android:id="@+id/rlNotification"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:visibility="visible" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlBody"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlHeader"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_20sdp">
+
+            <EditText
+                android:id="@+id/etReason"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_marginRight="@dimen/_20sdp"
+                android:background="@drawable/bg_white_with_gray_border"
+                android:fontFamily="@font/sharp_sans_reg"
+                android:gravity="top|left"
+                android:hint="@string/txt_reason"
+                android:imeOptions="actionDone"
+                android:inputType="textMultiLine"
+                android:maxHeight="@dimen/_25sdp"
+                android:padding="@dimen/_5sdp"
+                android:scrollbars="none"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray_hint"
+                android:textSize="@dimen/_5sdp" />
+
+            <Button
+                android:id="@+id/btnReport"
+                style="@style/BgButton"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_below="@+id/etReason"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:fontFamily="@font/sharp_sans_medium"
+                android:text="@string/txt_report"
+                android:textSize="@dimen/_6sdp" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

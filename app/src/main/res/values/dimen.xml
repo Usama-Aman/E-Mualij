@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="inputLayoutHeight">@dimen/_42sdp</dimen>
+    <dimen name="textSize_Inputlayout">@dimen/_12sdp</dimen>
+    <dimen name="inputLayoutZiroWidth">0dp</dimen>
+
+    <dimen name="ch_item_margin_frm_profile">@dimen/_2sdp</dimen>
+    <dimen name="ch_item_inner_view_margin">@dimen/_10sdp</dimen>
+    <dimen name="ch_item_inner_minus_margin">-3dp</dimen>
+    <dimen name="ch_item_parent_margin">@dimen/_2sdp</dimen>
+
+    <dimen name="keyboard_open_padding_left">0dp</dimen>
+    <dimen name="keyboard_open_padding_top">@dimen/_75sdp</dimen>
+    <dimen name="keyboard_open_padding_right">0dp</dimen>
+    <dimen name="keyboard_open_padding_bottom">@dimen/_75sdp</dimen>
+    <dimen name="keyboard_open_padding_top_bottom_phone">@dimen/_125sdp</dimen>
+
+    <dimen name="keyboard_close_padding_left">0dp</dimen>
+    <dimen name="keyboard_close_padding_top">@dimen/_4sdp</dimen>
+    <dimen name="keyboard_close_padding_right">0dp</dimen>
+    <dimen name="keyboard_close_padding_bottom">@dimen/_4sdp</dimen>
+    <dimen name="dialog_chat_weight">0.65</dimen>
+
+</resources>

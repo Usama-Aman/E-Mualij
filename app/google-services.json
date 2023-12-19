@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "1067180429958",
+    "firebase_url": "https://mualij-5c725.firebaseio.com",
+    "project_id": "mualij-5c725",
+    "storage_bucket": "mualij-5c725.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1067180429958:android:b914af50ce22342ef5b707",
+        "android_client_info": {
+          "package_name": "com.elementary.mualij"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1067180429958-p050khte8cup9hdo4tu5ph48l2ak6ifn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTsWNcXGLhrTjKvVaZuTW3wC43vOtN0mI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1067180429958-p050khte8cup9hdo4tu5ph48l2ak6ifn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1067180429958-vc2kg74rn71lo05kcqffhqrbk1kkhjk7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.elementary.mualij",
+                "app_store_id": "1524664621"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1067180429958:android:d07d0da08c75998ef5b707",
+        "android_client_info": {
+          "package_name": "com.elementary.mualijpro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1067180429958-p050khte8cup9hdo4tu5ph48l2ak6ifn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTsWNcXGLhrTjKvVaZuTW3wC43vOtN0mI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1067180429958-p050khte8cup9hdo4tu5ph48l2ak6ifn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1067180429958-vc2kg74rn71lo05kcqffhqrbk1kkhjk7.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.elementary.mualij",
+                "app_store_id": "1524664621"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

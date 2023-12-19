@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".utils.TrimmerActivity">
+
+    <RelativeLayout
+        android:id="@+id/rlBackArrowHeader"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@color/colorPrimary"
+        android:visibility="visible"
+
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            style="@style/customTextMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/txt_trim_video"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10sdp" />
+
+        <RelativeLayout
+            android:id="@+id/rlBackArrow"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/ivBackArrow"
+                android:layout_width="@dimen/_9sdp"
+                android:layout_height="@dimen/_13sdp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/ic_back" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.video_trim.K4LVideoTrimmer
+        android:id="@+id/timeLine"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rlBackArrowHeader" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

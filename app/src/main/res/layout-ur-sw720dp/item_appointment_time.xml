@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:layout_gravity="right"
+        android:id="@+id/linearAppointment"
+        android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <RelativeLayout
+                android:id="@+id/rlParentTimeOne"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/_18sdp"
+                android:background="@drawable/bg_white_with_green_border">
+
+            <LinearLayout
+                    android:id="@+id/llTimeAndNameOne"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:id="@+id/tvNameOne"
+                        android:layout_width="@dimen/_11sdp"
+                        android:layout_height="@dimen/_11sdp"
+                        android:fontFamily="@font/sharp_sans_medium"
+                        android:background="@drawable/bg_gray_circle"
+                        android:text="AL"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:padding="@dimen/_2sdp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_4sdp"/>
+
+                <TextView
+                        android:id="@+id/tvTimeOne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sharp_sans_medium"
+                        android:text="09:00 AM"
+                        android:layout_marginRight="@dimen/_3sdp"
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_5sdp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/rlParentTimeTwo"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/_4sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:background="@drawable/bg_white_with_green_border">
+
+            <LinearLayout
+                    android:id="@+id/llTimeAndNameTwo"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:id="@+id/tvNameTwo"
+                        android:layout_width="@dimen/_11sdp"
+                        android:layout_height="@dimen/_11sdp"
+                        android:fontFamily="@font/sharp_sans_medium"
+                        android:background="@drawable/bg_gray_circle"
+                        android:text="AL"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:padding="@dimen/_2sdp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_4sdp"/>
+
+                <TextView
+                        android:id="@+id/tvTimeTwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sharp_sans_medium"
+                        android:text="09:00 AM"
+                        android:layout_marginRight="@dimen/_3sdp"
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_5sdp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/rlParentTimeThree"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/_4sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:background="@drawable/bg_white_with_green_border">
+
+            <LinearLayout
+                    android:id="@+id/llTimeAndNameThree"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:id="@+id/tvNameThree"
+                        android:layout_width="@dimen/_11sdp"
+                        android:layout_height="@dimen/_11sdp"
+                        android:fontFamily="@font/sharp_sans_medium"
+                        android:background="@drawable/bg_gray_circle"
+                        android:text="AL"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:padding="@dimen/_2sdp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_4sdp"/>
+
+                <TextView
+                        android:id="@+id/tvTimeThree"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sharp_sans_medium"
+                        android:text="09:00 AM"
+                        android:layout_marginRight="@dimen/_3sdp"
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_5sdp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/rlParentTimeFour"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/_4sdp"
+                android:layout_height="@dimen/_18sdp"
+                android:background="@drawable/bg_white_with_green_border">
+
+            <LinearLayout
+                    android:id="@+id/llTimeAndNameFour"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:id="@+id/tvNameFour"
+                        android:layout_width="@dimen/_11sdp"
+                        android:layout_height="@dimen/_11sdp"
+                        android:fontFamily="@font/sharp_sans_medium"
+                        android:background="@drawable/bg_gray_circle"
+                        android:text="AL"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:padding="@dimen/_2sdp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_4sdp"/>
+
+                <TextView
+                        android:id="@+id/tvTimeFour"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sharp_sans_medium"
+                        android:text="09:00 AM"
+                        android:layout_marginRight="@dimen/_3sdp"
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_5sdp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/rlParentTimeFive"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="@dimen/_18sdp"
+                android:layout_marginRight="@dimen/_4sdp"
+                android:background="@drawable/bg_white_with_green_border">
+
+            <LinearLayout
+                    android:id="@+id/llTimeAndNameFive"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_height="wrap_content">
+
+                <TextView
+                        android:id="@+id/tvNameFive"
+                        android:layout_width="@dimen/_11sdp"
+                        android:layout_height="@dimen/_11sdp"
+                        android:fontFamily="@font/sharp_sans_medium"
+                        android:background="@drawable/bg_gray_circle"
+                        android:text="AL"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:gravity="center"
+                        android:padding="@dimen/_2sdp"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_4sdp"/>
+
+                <TextView
+                        android:id="@+id/tvTimeFive"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/sharp_sans_medium"
+                        android:text="09:00 AM"
+                        android:layout_marginRight="@dimen/_3sdp"
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="@dimen/_5sdp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="MissingDefaultResource">
+
+    <RelativeLayout
+            android:id="@+id/rlFilters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_light">
+
+        <LinearLayout
+                android:id="@+id/llFilters"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_margin="@dimen/_4sdp"
+                android:orientation="horizontal">
+
+            <RelativeLayout
+                    android:id="@+id/rlMonth"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_13sdp"
+                    android:background="@drawable/bg_white_with_gray_border">
+
+                <TextView
+                        android:id="@+id/tvMonth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/sharp_sans_reg"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:text="@string/txt_month"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/_5sdp" />
+
+                <ImageView
+                        android:id="@+id/ivArrowMonth"
+                        android:layout_width="@dimen/_5sdp"
+                        android:layout_height="@dimen/_3sdp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:background="@drawable/ic_down_arrow"
+                        android:backgroundTint="@color/colorPrimary" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/rlYear"
+                    android:layout_width="@dimen/_60sdp"
+                    android:layout_height="@dimen/_13sdp"
+                    android:layout_marginRight="@dimen/_6sdp"
+                    android:background="@drawable/bg_white_with_gray_border">
+
+                <TextView
+                        android:id="@+id/tvYear"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/sharp_sans_reg"
+                        android:paddingRight="@dimen/_5sdp"
+                        android:text="@string/txt_year"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/_5sdp" />
+
+                <ImageView
+                        android:id="@+id/ivArrowYear"
+                        android:layout_width="@dimen/_5sdp"
+                        android:layout_height="@dimen/_3sdp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/_5sdp"
+                        android:background="@drawable/ic_down_arrow"
+                        android:backgroundTint="@color/colorPrimary" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ScrollView
+            android:id="@+id/svParent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+        <LinearLayout
+                android:id="@+id/llParent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <LinearLayout
+                    android:id="@+id/llStatisticsParent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_white_with_gray_border"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                        android:id="@+id/llTopStatistics"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/_2sdp"
+                        android:layout_marginRight="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_2sdp"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/_3sdp"
+                        android:paddingBottom="@dimen/_3sdp"
+                        android:weightSum="4">
+
+                    <LinearLayout
+                            android:id="@+id/llTotalAppointments"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_5sdp">
+
+                        <ImageView
+                                android:id="@+id/ivTotalAppointments"
+                                android:layout_width="@dimen/_17sdp"
+                                android:layout_height="@dimen/_17sdp"
+                                android:layout_gravity="center_vertical"
+                                android:background="@drawable/ic_total_appointment" />
+
+                        <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:orientation="vertical">
+
+                            <TextView
+                                    android:id="@+id/tvTotalAppointments"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="@font/sharp_sans_bold"
+                                    android:text="000"
+                                    android:gravity="right"
+                                    android:maxLines="2"
+                                    android:ellipsize="end"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="@dimen/_7sdp" />
+
+                            <TextView
+                                    android:id="@+id/tvTotalAppntTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:ellipsize="end"
+                                    android:gravity="right"
+                                    android:fontFamily="@font/sharp_sans_medium"
+                                    android:maxLines="2"
+                                    android:text="@string/txt_total_appointments"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/gray_dark"
+                                    android:textSize="@dimen/_4sdp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_marginBottom="@dimen/_3sdp"
+                            android:background="@color/gray_light" />
+
+                    <LinearLayout
+                            android:id="@+id/llEarningThisMonth"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:layout_marginRight="@dimen/_2sdp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_5sdp">
+
+                        <ImageView
+                                android:id="@+id/ivEarningMonth"
+                                android:layout_width="@dimen/_17sdp"
+                                android:layout_height="@dimen/_17sdp"
+                                android:layout_gravity="center_vertical"
+                                android:background="@drawable/ic_month_earning" />
+
+                        <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:orientation="vertical">
+
+                            <TextView
+                                    android:id="@+id/tvEarningMonth"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="@font/sharp_sans_bold"
+                                    android:text="00.00"
+                                    android:gravity="right"
+                                    android:maxLines="2"
+                                    android:ellipsize="end"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="@dimen/_7sdp" />
+
+                            <TextView
+                                    android:id="@+id/tvEarningMonthTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:ellipsize="end"
+                                    android:gravity="right"
+                                    android:fontFamily="@font/sharp_sans_medium"
+                                    android:maxLines="2"
+                                    android:text="@string/txt_earning_month"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/gray_dark"
+                                    android:textSize="@dimen/_4sdp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_marginBottom="@dimen/_3sdp"
+                            android:background="@color/gray_light" />
+
+                    <LinearLayout
+                            android:id="@+id/llTotalEarning"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/_2sdp"
+                            android:layout_marginRight="@dimen/_2sdp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_5sdp">
+
+                        <ImageView
+                                android:id="@+id/ivTotalEarning"
+                                android:layout_width="@dimen/_17sdp"
+                                android:layout_height="@dimen/_17sdp"
+                                android:layout_gravity="center_vertical"
+                                android:background="@drawable/ic_total_earning" />
+
+                        <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:orientation="vertical">
+
+                            <TextView
+                                    android:id="@+id/tvTotalEarning"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="@font/sharp_sans_bold"
+                                    android:text="00.00K"
+                                    android:gravity="right"
+                                    android:maxLines="2"
+                                    android:ellipsize="end"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="@dimen/_7sdp" />
+
+                            <TextView
+                                    android:id="@+id/tvTotalEarningTitle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:ellipsize="end"
+                                    android:gravity="right"
+                                    android:fontFamily="@font/sharp_sans_medium"
+                                    android:maxLines="2"
+                                    android:text="@string/txt_total_earning"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/gray_dark"
+                                    android:textSize="@dimen/_4sdp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/_3sdp"
+                            android:layout_marginBottom="@dimen/_3sdp"
+                            android:background="@color/gray_light" />
+
+                    <LinearLayout
+                            android:id="@+id/llRating"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginRight="@dimen/_2sdp"
+                            android:layout_weight="1"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/_5sdp">
+
+                        <ImageView
+                                android:id="@+id/ivRating"
+                                android:layout_width="@dimen/_17sdp"
+                                android:layout_height="@dimen/_17sdp"
+                                android:layout_gravity="center_vertical"
+                                android:background="@drawable/ic_rating" />
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:orientation="vertical">
+
+                            <TextView
+                                    android:id="@+id/tvAvgRating"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="@font/sharp_sans_bold"
+                                    android:text="0.0"
+                                    android:gravity="right"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textSize="@dimen/_7sdp" />
+
+                            <com.willy.ratingbar.ScaleRatingBar
+                                    android:id="@+id/avgRating"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginTop="@dimen/_1sdp"
+                                    android:layout_weight="1"
+                                    app:srb_clearRatingEnabled="true"
+                                    app:srb_clickable="true"
+                                    app:srb_drawableEmpty="@drawable/ic_star_un"
+                                    app:srb_drawableFilled="@drawable/ic_star_sl"
+                                    app:srb_isIndicator="true"
+                                    app:srb_minimumStars="0"
+                                    app:srb_numStars="5"
+                                    app:srb_scrollable="true"
+                                    app:srb_starHeight="@dimen/_5sdp"
+                                    app:srb_starPadding="2dp"
+                                    app:srb_starWidth="@dimen/_5sdp"
+                                    app:srb_stepSize="1" />
+
+                            <TextView
+                                    android:id="@+id/tvTotalRating"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginTop="@dimen/_2sdp"
+                                    android:ellipsize="end"
+                                    android:gravity="right"
+                                    android:fontFamily="@font/sharp_sans_medium"
+                                    android:maxLines="2"
+                                    android:text="0000000"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/gray_dark"
+                                    android:textSize="@dimen/_4sdp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/llGraphs"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                        android:id="@+id/llFirstGraph"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_90sdp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                    <LinearLayout
+                            android:id="@+id/llAppointmentByType"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.6"
+                            android:background="@drawable/bg_white_with_gray_border"
+                            android:orientation="vertical">
+
+                        <TextView
+                                android:id="@+id/tvAppointmentByType"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:ellipsize="end"
+                                android:fontFamily="@font/sharp_sans_medium"
+                                android:gravity="center_vertical"
+                                android:maxLines="1"
+                                android:text="@string/txt_appointments_by_types"
+                                android:textAllCaps="true"
+                                android:textColor="@color/gray_dark"
+                                android:textSize="@dimen/_6sdp" />
+
+                        <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/gray_light" />
+
+                        <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="@dimen/_2sdp">
+
+                            <RelativeLayout
+                                    android:id="@+id/rlPieChartType"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:visibility="gone">
+
+                                <id.yuana.chart.pie.PieChartView
+                                        android:id="@+id/pieChartByType"
+                                        android:layout_width="@dimen/_60sdp"
+                                        android:layout_height="@dimen/_60sdp"
+                                        android:layout_centerInParent="true" />
+
+                                <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:orientation="vertical">
+
+                                    <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+
+                                        <View
+                                                android:layout_width="@dimen/_2sdp"
+                                                android:layout_height="@dimen/_2sdp"
+                                                android:layout_gravity="center_vertical"
+                                                android:background="@color/gray_hint" />
+
+                                        <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_centerInParent="true"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_marginLeft="@dimen/_1sdp"
+                                                android:fontFamily="@font/sharp_sans_bold"
+                                                android:gravity="center_vertical"
+                                                android:text="@string/txt_off_time"
+                                                android:textAllCaps="true"
+                                                android:textColor="@color/gray_hint"
+                                                android:textSize="@dimen/_3sdp" />
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/_1sdp"
+                                            android:orientation="horizontal">
+
+                                        <View
+                                                android:layout_width="@dimen/_2sdp"
+                                                android:layout_height="@dimen/_2sdp"
+                                                android:layout_gravity="center_vertical"
+                                                android:background="@color/colorPrimary" />
+
+                                        <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_centerInParent="true"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_marginLeft="@dimen/_1sdp"
+                                                android:fontFamily="@font/sharp_sans_bold"
+                                                android:gravity="center_vertical"
+                                                android:text="@string/txt_on_time"
+                                                android:textAllCaps="true"
+                                                android:textColor="@color/colorPrimary"
+                                                android:textSize="@dimen/_3sdp" />
+
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                            <TextView
+                                    android:id="@+id/tvNoDataFoundPieType"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:fontFamily="@font/sharp_sans_medium"
+                                    android:text="@string/txt_no_appointment_found"
+                                    android:textColor="@color/gray_dark"
+                                    android:textSize="@dimen/_5sdp"
+                                    android:visibility="gone" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:id="@+id/llRevenueProgress"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_weight="1.4"
+                            android:background="@drawable/bg_white_with_gray_border"
+                            android:orientation="vertical">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_15sdp"
+                                android:background="@color/colorPrimary"
+                                android:orientation="horizontal"
+                                android:paddingLeft="@dimen/_5sdp"
+                                android:paddingTop="@dimen/_3sdp"
+                                android:paddingRight="@dimen/_5sdp"
+                                android:paddingBottom="@dimen/_3sdp">
+
+                            <ImageView
+                                    android:id="@+id/ivRevenueProgress"
+                                    android:layout_width="@dimen/_8sdp"
+                                    android:layout_height="@dimen/_8sdp"
+                                    android:layout_gravity="center_vertical"
+                                    android:background="@drawable/ic_revenue" />
+
+
+                            <TextView
+                                    android:id="@+id/tvRevenueProgress"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:ellipsize="end"
+                                    android:fontFamily="@font/sharp_sans_medium"
+                                    android:maxLines="1"
+                                    android:gravity="right"
+                                    android:text="@string/txt_revenue_progress"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_6sdp" />
+
+                        </LinearLayout>
+
+                        <com.github.mikephil.charting.charts.BarChart
+                                android:id="@+id/revenueBarChart"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:visibility="gone"
+                                android:layout_margin="@dimen/_3sdp"
+                                android:background="@color/white" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                        android:id="@+id/llSecondGraph"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_90sdp"
+                        android:layout_marginTop="@dimen/_9sdp"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                    <LinearLayout
+                            android:id="@+id/llAppointmentByTime"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.6"
+                            android:background="@drawable/bg_white_with_gray_border"
+                            android:orientation="vertical">
+
+                        <TextView
+                                android:id="@+id/tvAppointmentByTime"
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_15sdp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/_5sdp"
+                                android:layout_marginRight="@dimen/_5sdp"
+                                android:ellipsize="end"
+                                android:fontFamily="@font/sharp_sans_medium"
+                                android:gravity="center_vertical"
+                                android:maxLines="1"
+                                android:text="@string/txt_appointments_by_time"
+                                android:textAllCaps="true"
+                                android:textColor="@color/gray_dark"
+                                android:textSize="@dimen/_6sdp" />
+
+                        <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:background="@color/gray_light" />
+
+                        <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="@dimen/_2sdp">
+
+                            <RelativeLayout
+                                    android:id="@+id/rlPieChartTime"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:visibility="gone">
+
+                                <id.yuana.chart.pie.PieChartView
+                                        android:id="@+id/pieChartByTime"
+                                        android:layout_width="@dimen/_60sdp"
+                                        android:layout_height="@dimen/_60sdp"
+                                        android:layout_centerInParent="true" />
+
+                                <LinearLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:orientation="vertical">
+
+                                    <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="horizontal">
+
+                                        <View
+                                                android:layout_width="@dimen/_2sdp"
+                                                android:layout_height="@dimen/_2sdp"
+                                                android:layout_gravity="center_vertical"
+                                                android:background="@color/gray_hint" />
+
+                                        <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_centerInParent="true"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_marginLeft="@dimen/_1sdp"
+                                                android:fontFamily="@font/sharp_sans_bold"
+                                                android:gravity="center_vertical"
+                                                android:text="@string/txt_past"
+                                                android:textAllCaps="true"
+                                                android:textColor="@color/gray_hint"
+                                                android:textSize="@dimen/_3sdp" />
+
+
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="@dimen/_1sdp"
+                                            android:orientation="horizontal">
+
+                                        <View
+                                                android:layout_width="@dimen/_2sdp"
+                                                android:layout_height="@dimen/_2sdp"
+                                                android:layout_gravity="center_vertical"
+                                                android:background="@color/colorPrimary" />
+
+                                        <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_centerInParent="true"
+                                                android:layout_gravity="center_vertical"
+                                                android:layout_marginLeft="@dimen/_1sdp"
+                                                android:fontFamily="@font/sharp_sans_bold"
+                                                android:gravity="center_vertical"
+                                                android:text="@string/txt_upcoming"
+                                                android:textAllCaps="true"
+                                                android:textColor="@color/colorPrimary"
+                                                android:textSize="@dimen/_3sdp" />
+
+
+                                    </LinearLayout>
+
+                                </LinearLayout>
+
+                            </RelativeLayout>
+
+                            <TextView
+                                    android:id="@+id/tvNoDataFoundPieTime"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:fontFamily="@font/sharp_sans_medium"
+                                    android:text="@string/txt_no_appointment_found"
+                                    android:textColor="@color/gray_dark"
+                                    android:textSize="@dimen/_5sdp"
+                                    android:visibility="gone" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                            android:id="@+id/llAppointmentProgress"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/_10sdp"
+                            android:layout_weight="1.4"
+                            android:background="@drawable/bg_white_with_gray_border"
+                            android:orientation="vertical">
+
+                        <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="@dimen/_15sdp"
+                                android:background="@color/colorPrimary"
+                                android:orientation="horizontal"
+                                android:paddingLeft="@dimen/_5sdp"
+                                android:paddingTop="@dimen/_3sdp"
+                                android:paddingRight="@dimen/_5sdp"
+                                android:paddingBottom="@dimen/_3sdp">
+
+                            <ImageView
+                                    android:id="@+id/ivAppointmentProgress"
+                                    android:layout_width="@dimen/_8sdp"
+                                    android:layout_height="@dimen/_8sdp"
+                                    android:layout_gravity="center_vertical"
+                                    android:background="@drawable/ic_appointment" />
+
+                            <TextView
+                                    android:id="@+id/tvAppointmentProgress"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="@dimen/_5sdp"
+                                    android:ellipsize="end"
+                                    android:fontFamily="@font/sharp_sans_medium"
+                                    android:maxLines="1"
+                                    android:text="@string/txt_appointments_progress"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/_6sdp" />
+
+                        </LinearLayout>
+
+                        <com.github.mikephil.charting.charts.BarChart
+                                android:id="@+id/appointmentBarChart"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_margin="@dimen/_3sdp"
+                                android:visibility="gone"
+                                android:background="@color/white" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

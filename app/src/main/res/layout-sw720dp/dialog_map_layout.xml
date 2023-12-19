@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:orientation="vertical"
+                android:id="@+id/llMain"
+                android:layout_width="match_parent"
+                android:background="@android:color/transparent"
+                android:layout_height="match_parent"
+                tools:ignore="MissingDefaultResource">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_with_gray_border"
+            android:layout_centerInParent="true">
+
+        <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                    android:id="@+id/ivCrossCards"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_gravity="right"
+                    android:layout_alignParentRight="true"
+                    app:srcCompat="@drawable/buy_coin_dialog_cross"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:orientation="vertical">
+
+            <RelativeLayout
+                    android:id="@+id/rlSearchLocation"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/bg_white_with_gray_border"
+                    android:layout_height="@dimen/_20sdp">
+
+                <TextView
+                        android:id="@+id/tvSearchLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/sharp_sans_reg"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_toLeftOf="@+id/ivSearchLocationArrow"
+                        android:padding="@dimen/_5sdp"
+                        android:maxLines="1"
+                        android:ellipsize="end"
+                        android:text="@string/txt_search"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="@dimen/_6sdp"/>
+
+                <ImageView
+                        android:id="@+id/ivSearchLocationArrow"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_10sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:layout_alignParentRight="true"
+                        android:backgroundTint="@color/gray_dark"
+                        android:background="@drawable/ic_arrow_right"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:background="@drawable/bg_white_with_gray_border"
+                    android:layout_height="@dimen/_150sdp">
+
+                <com.google.android.gms.maps.MapView
+                        android:id="@+id/mapView"
+                        android:layout_width="match_parent"
+                        android:background="@drawable/bg_white_with_gray_border"
+                        android:layout_height="match_parent">
+
+                </com.google.android.gms.maps.MapView>
+
+                <ImageView
+                        android:id="@+id/ivClinicAddress"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/_5sdp"
+                        android:backgroundTint="@color/app_default_color"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/ic_location"/>
+
+            </RelativeLayout>
+
+            <Button
+                    android:id="@+id/btnDone"
+                    style="@style/BgButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_20sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_5sdp"
+                    android:text="@string/txt_done"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

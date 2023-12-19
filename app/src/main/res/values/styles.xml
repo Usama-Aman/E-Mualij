@@ -1,0 +1,117 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.AdAttribute">
+        <item name="android:layout_width">@dimen/_9sdp</item>
+        <item name="android:layout_height">@dimen/_6sdp</item>
+        <item name="android:layout_gravity">right</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_3sdp</item>
+        <item name="android:text">@string/txt_ad</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:fontFamily">@font/sharp_sans_reg</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:background">@color/color_ad</item>
+    </style>
+
+    <style name="NoActionBar" parent="@android:style/Theme.Holo.Light">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="BgButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:background">@drawable/bg_gray_without_border</item>
+        <item name="android:textColor">@color/app_default_color</item>
+        <item name="android:textSize">@dimen/_7sdp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:width">@dimen/_200sdp</item>
+        <item name="android:height">@dimen/_25sdp</item>
+        <item name="android:fontFamily">@font/sharp_sans_medium</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_down</item>
+        <item name="android:windowExitAnimation">@anim/slide_up</item>
+    </style>
+
+    <style name="DialogAnimationEn">
+        <item name="android:windowEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <style name="DialogAnimationAr">
+        <item name="android:windowEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_left</item>
+    </style>
+
+    <style name="tab_text" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:fontFamily">@font/sharp_sans_reg</item>
+        <item name="android:textSize">@dimen/_6sdp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="chatItemParentBg">
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="DialogStyle" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+
+    <style name="Theme.AppCompat.Translucent" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+
+    <style name="customTextHeading" parent="@android:style/TextAppearance">
+        <!-- Customize your theme here. -->
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/sharp_sans_reg</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+    </style>
+
+    <style name="AppTheme.WhiteAccent">
+        <item name="colorAccent">@color/white</item> <!-- Whatever color you want-->
+    </style>
+
+    <style name="AppTheme.GreenAccent">
+        <item name="colorAccent">@color/colorPrimary</item> <!-- Whatever color you want-->
+    </style>
+
+
+    <style name="customTextMedium" parent="@android:style/TextAppearance">
+        <!-- Customize your theme here. -->
+        <item name="android:textColor">@color/headingsAndSimpTextColor</item>
+        <item name="android:fontFamily">@font/sharp_sans_medium</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+    </style>
+
+    <style name="NavigationDrawerStyle">
+        <item name="android:textSize">@dimen/_13sdp</item>
+        <item name="fontFamily">@font/sharp_sans_medium</item>
+        <item name="colorControlHighlight">@color/transparent</item>
+    </style>
+
+
+</resources>

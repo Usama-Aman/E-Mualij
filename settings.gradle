@@ -1,0 +1,4 @@
+include ':videotrim'
+include ':record-view'
+include ':app'
+rootProject.name='MaulijDoc'

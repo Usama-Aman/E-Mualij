@@ -1,0 +1,238 @@
+<resources>
+
+    <string name="app_name">Mualij Pro</string>
+    <string name="txt_something_went_wrong">حدث خطأ ما. أعد المحاولة من فضلك</string>
+    <string name="txt_no_internet_connection">لا يوجد اتصال بالإنترنت.</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">
+        AIzaSyCjk-Jj4fqS9nE1r5EbXiu63tPaMpptOMs
+    </string>
+    <string name="txt_google_ads_key">ca-app-pub-8763521529850930~1348475578</string>
+    <string name="txt_countly_key">99686346d45608c8c496416cc32b8978fe80033a</string>
+    <string name="txt_countly_base_url">https://us-try.count.ly</string>
+
+    <string name="txt_auth_sign_in">تسجيل الدخول</string>
+    <string name="txt_auth_sign_in_decs">إلى حسابك</string>
+
+    <string name="txt_auth_email_hint">email@email.com</string>
+    <string name="txt_auth_password_hint">كلمه السر</string>
+    <string name="txt_auth_forgot_pass">نسيت رقمك السري؟</string>
+
+    <string name="txt_setting_weekly_schedule">الجدول الأسبوعي</string>
+    <string name="txt_setting_my_appointments">المواعيد الخاصة بي</string>
+    <string name="txt_setting_date">اليوم</string>
+
+    <string name="txt_setting_profile">الملف الشخصي</string>
+    <string name="txt_setting_settings">الإعدادات</string>
+    <string name="txt_setting_password">كلمه السر</string>
+    <string name="txt_setting_statistics">الإحصاء</string>
+    <string name="txt_setting_logout">تسجيل خروج</string>
+    <string name="txt_setting_monday">الإثنين</string>
+    <string name="txt_setting_tuesday">الثلاثاء</string>
+    <string name="txt_setting_wednesday">الأربعاء</string>
+    <string name="txt_setting_thursday">الخميس</string>
+    <string name="txt_setting_friday">يوم الجمعة</string>
+    <string name="txt_setting_saturday">يوم السبت</string>
+    <string name="txt_setting_sunday">الأحد</string>
+    <string name="txt_setting_start_time">وقت البدء</string>
+    <string name="txt_setting_end_time">وقت النهاية</string>
+    <string name="txt_setting_time_per_section">قسم الوقت لكل</string>
+    <string name="txt_setting_lap_per_section">لاب لكل قسم</string>
+    <string name="txt_minutes">الدقائق</string>
+    <string name="txt_update">تحديث</string>
+    <string name="txt_am">صباحا</string>
+    <string name="txt_pm">مساء</string>
+    <string name="txt_err_msg_password">لا يمكن أن تكون كلمة المرور فارغة</string>
+    <string name="txt_err_msg_email">مطلوب بريد إلكتروني صحيح</string>
+
+    <string name="txt_alert_internet_connection">لا يوجد اتصال إنترنت متاح</string>
+    <string name="txt_alert_information">خطأ!</string>
+    <string name="txt_alert_success_information">نجاح</string>
+    <string name="txt_search">بحث</string>
+
+    <string name="txt_profile_first_name">الاسم الاول</string>
+    <string name="txt_profile_last_name">الكنية</string>
+    <string name="txt_profile_gender">جنس</string>
+    <string name="txt_profile_gender_male">الذكر</string>
+    <string name="txt_profile_gender_female">أنثى</string>
+    <string name="txt_profile_phone_number">رقم الهاتف</string>
+    <string name="txt_profile_email">البريد الإلكتروني</string>
+    <string name="txt_profile_clinic_address">عنوان العيادة</string>
+    <string name="txt_profile_language_spoken">اللغة المحكية</string>
+    <string name="txt_profile_personal_statement">بيان المهنية</string>
+    <string name="txt_profile_education">التعليم</string>
+    <string name="txt_profile_board_certification">شهادات المجلس</string>
+    <string name="txt_alert_something_went_wrong_with_image">حدث خطأ ما في الصورة ، يرجى إعادة المحاولة أو تجربة صورة
+        مختلفة
+    </string>
+    <string name="txt_permission_alert_title">طلب الاذن مرفوض</string>
+    <string name="txt_permission_alert_desc">انتقل إلى الإعدادات للسماح بموافقتك</string>
+    <string name="txt_settings">الإعدادات</string>
+
+    <string name="txt_title_image_picker">اختر فعلا</string>
+    <string name="txt_cancel">إلغاء</string>
+    <string name="txt_choose_gallery">اختر من المعرض</string>
+    <string name="txt_open_camera">افتح الكاميرا</string>
+    <string name="txt_logout_confirmation">هل أنت متأكد من تسجيل الخروج؟</string>
+    <string name="txt_yes">نعم</string>
+    <string name="txt_no">لا</string>
+    <string name="txt_done">منجز</string>
+    <string name="txt_confirmation">التأكيد!!</string>
+    <string name="txt_logout">تسجيل خروج</string>
+
+    <string name="txt_err_msg_first_name">الاسم الأول مطلوب</string>
+    <string name="txt_err_msg_last_name">نشاط اسم مطلوب</string>
+    <string name="txt_err_msg_address">لا يمكن أن يكون العنوان فارغًا</string>
+    <string name="txt_err_msg_phone">مطلوب رقم هاتف صالح</string>
+    <string name="txt_setting_day_error">يجب تحديد يوم واحد على الأقل</string>
+
+    <string name="txt_setting_time_per_section_err">لا يمكن أن يكون الوقت لكل قسم فارغًا</string>
+    <string name="txt_setting_lap_per_section_err">اللفة لكل قسم لا يمكن أن تكون فارغة</string>
+
+    <string name="txt_setting_start_n_end_time_err">يجب ألا يكون وقت البدء والانتهاء فارغين في اليوم المحدد/string></string>
+
+    <string name="txt_old_password">كلمة سر قديمة</string>
+    <string name="txt_new_password">كلمة سر جديدة</string>
+    <string name="txt_retype_password">أعد كتابة كلمة السر الجديدة</string>
+    <string name="txt_type_old_password">اكتب كلمة المرور القديمة</string>
+    <string name="txt_type_new_password">اكتب كلمة مرور جديدة</string>
+
+    <string name="txt_change_pass_error">لا يمكن أن تكون كلمة المرور فارغة</string>
+    <string name="txt_change_new_pass_error">لا يمكن أن تكون كلمة المرور الجديدة فارغة</string>
+    <string name="txt_change_retype_pass_error">كلمة المرور الجديدة لا تتطابق مع كلمة مرور إعادة الكتابة</string>
+
+    <string name="txt_header_appoinment_title">بلدي التعيينات</string>
+    <string name="txt_header_profile_title">إعدادات الملف الشخصي</string>
+    <string name="txt_header_settings_title">الجدول الأسبوعي</string>
+    <string name="txt_header_statistics_title">الإحصاء</string>
+    <string name="txt_header_change_pass_title">تغيير كلمة المرور</string>
+    <string name="txt_no_result_found">لاتوجد بيانات</string>
+    <string name="txt_detail">التفاصيل</string>
+
+    <string name="txt_re_schedule">إعادة جدولة</string>
+    <string name="txt_add_prescription">إضافة وصفة طبية</string>
+    <string name="txt_medication">أدوية</string>
+    <string name="txt_chat">دردشة</string>
+    <string name="txt_re_check_in">إعادة التحقق في</string>
+    <string name="txt_days">أيام</string>
+    <string name="txt_age">عمر</string>
+    <string name="txt_medicine">دواء</string>
+    <string name="txt_type">اكتب</string>
+    <string name="txt_frequency">تكرر</string>
+    <string name="txt_dose">جرعة</string>
+    <string name="txt_prescription">وصفة طبية</string>
+    <string name="txt_save">حفظ</string>
+    <string name="txt_add">إضافة</string>
+    <string name="txt_no_appointment_found">لا يوجد موعد متاح</string>
+    <string name="txt_reset">إعادة تعيين</string>
+    <string name="txt_auth_forgot_pass_title">هل نسيت كلمة المرور</string>
+    <string name="txt_cancel_appointment_confirmation">هل أنت متأكد من إلغاء هذا الموعد؟</string>
+    <string name="txt_reschedule_title">إعادة جدولة</string>
+    <string name="txt_date">تاريخ:</string>
+    <string name="txt_no_available_schedule">لا يوجد جدول زمني متاح</string>
+    <string name="txt_reschedule_error">يرجى تحديد الوقت المتاح لإعادة جدولة</string>
+    <string name="txt_report_patient">هل تريد الإبلاغ عن هذا المريض؟</string>
+    <string name="txt_prescription_pdf_error">إنشاء / تحديث وصفة طبية أولاً ثم يمكنك مشاركة</string>
+    <string name="txt_prescription_delete_error">يجب إضافة وصفة طبية واحدة على الأقل</string>
+    <string name="txt_day">يوم</string>
+
+    <string name="txt_after">بعد</string>
+    <string name="txt_for">إلى عن على</string>
+    <string name="txt_ad">ميلادي</string>
+
+    <string name="txt_reason">اكتب السبب هنا</string>
+    <string name="txt_report_patient_title">الإبلاغ عن مريض</string>
+    <string name="txt_report">نقل</string>
+
+    <string name="txt_city_title">مدينة</string>
+    <string name="txt_select_city">اختر مدينة</string>
+
+    <string name="txt_today">اليوم</string>
+    <string name="txt_tomorrow">غدا</string>
+    <string name="txt_set_all_days">تعيين كل الأيام</string>
+    <string name="txt_settings_set_all_days_data">هل أنت متأكد من ضبط جميع الأيام المتبقية للتوقيت كأول يوم نشط؟</string>
+    <string name="txt_online_fee">رسوم على الانترنت</string>
+
+    <string name="txt_online_availability">التوفر عبر الإنترنت</string>
+
+    <string name="txt_chat_ended">انتهت الدردشة</string>
+    <string name="txt_type_your_msg">اكتب رسالتك</string>
+
+    <string name="txt_joined">وقد انضمت</string>
+    <string name="txt_slide_to_cancel">الانزلاق الى الغاء</string>
+    <string name="txt_chat_report_patient">تقرير المريض</string>
+
+    <string name="socket_reconnect">إعادة توصيل المقبس</string>
+    <string name="socket_reconnecting">مقبس إعادة الاتصال</string>
+    <string name="socket_reconnect_error">خطأ في إعادة توصيل المقبس</string>
+    <string name="socket_disconnect_error">توقف اتصال المقبس</string>
+    <string name="socket_connection_error_occurred">حدث خطأ في اتصال المقبس</string>
+    <string name="socket_connection_error">أخفق الاتصال ، يرجى المحاولة مرة أخرى</string>
+    <string name="socket_connection_timeout">مهلة اتصال المقبس</string>
+    <string name="socket_error_occurred">حدث خطأ في المقبس</string>
+    <string name="something_went_wrong_with_socket_connection">حدث خطأ ما في اتصال المقبس</string>
+    <string name="socket_request_connection_fail">مهلة طلب مأخذ التوصيل ، أعد المحاولة</string>
+
+    <string name="txt_new_picture">صورة جديدة</string>
+    <string name="txt_from_camera">من الكاميرا</string>
+
+    <string name="txt_you_have_joined">لقد انضممت</string>
+    <string name="txt_doctor_online">Doctor has joined</string>
+    <string name="txt_typing">الكتابة .....</string>
+    <string name="txt_remove_msg_confirmation">هل أنت متأكد من حذف هذه الرسالة؟</string>
+    <string name="txt_media_gallery">معرض الوسائط</string>
+
+    <string name="txt_recording_alert">تقوم بتسجيل بعض الصوت ، الرجاء إرسال / إيقاف / إلغاء أولاً ، ثم يمكنك تشغيل / إيقاف الصوت مؤقتًا من الرسائل.</string>
+    <string name="txt_recording_permission_error">انتقل إلى الإعدادات للسماح بإذن التسجيل</string>
+    <string name="txt_video_lenght_error">لا يمكن أن يكون الفيديو أكبر من 30 ثوانٍ</string>
+
+    <string name="txt_month">شهر</string>
+    <string name="txt_year">عام</string>
+
+
+    <string name="txt_total_appointments">إجمالي المواعيد</string>
+    <string name="txt_earning_month">كسب هذا الشهر</string>
+    <string name="txt_total_earning">مجموع الأرباح</string>
+    <string name="txt_total">مجموع</string>
+    <string name="txt_appointments_by_types">التعيينات حسب النوع</string>
+    <string name="txt_revenue_progress">تقدم الإيرادات</string>
+    <string name="txt_appointments_by_time">التعيينات حسب الوقت</string>
+    <string name="txt_appointments_progress">تقدم المواعيد</string>
+
+    <string name="txt_off_time">خارج الوقت</string>
+    <string name="txt_on_time">في الوقت المناسب</string>
+    <string name="txt_past">الماضي</string>
+    <string name="txt_upcoming">القادمة</string>
+
+    <string name="txt_jan">Jan</string>
+    <string name="txt_feb">Feb</string>
+    <string name="txt_mar">Mar</string>
+    <string name="txt_apr">Apr</string>
+    <string name="txt_may">May</string>
+    <string name="txt_jun">Jun</string>
+    <string name="txt_jul">Jul</string>
+    <string name="txt_aug">Aug</string>
+    <string name="txt_sep">Sep</string>
+    <string name="txt_oct">Oct</string>
+    <string name="txt_nov">Nov</string>
+    <string name="txt_dec">Dec</string>
+
+    <string name="txt_all">الكل</string>
+
+    <string name="txt_unknown_request"></string>
+    <!--    <string name="txt_unknown_request">Trying to access unknown request or something went wrong, please try again later</string>-->
+    <string name="txt_blocked">العديد من المحاولات الخاطئة ، يرجى الاتصال بالدعم أو المحاولة مرة أخرى لاحقًا</string>
+
+    <string name="txt_request_limit_exceed">تم تجاوز حد طلبك. الرجاء معاودة المحاولة في وقت لاحق</string>
+    <string name="txt_complete_appointment">Complete</string>
+    <string name="txt_complete_appointment_confirmation">Are you sure you want to complete this appointment?</string>
+    <string name="txt_current_time">Current Time:</string>
+    <string name="txt_chat_not_started_prescription_add">You cannot add prescription in not completed appointments</string>
+    <string name="txt_chat_not_started_complete_add">You cannot complete appointments before designated time or ongoing appointments</string>
+    <string name="txt_maintenance">Maintenance</string>
+    <string name="txt_maintenance_sub">Maintenance Maintenance Maintenance Maintenance Maintenance Maintenance Maintenance</string>
+    <string name="txt_audio_lenght_error">Recording cannot be greater then 2 minutes</string>
+
+    <string name="back_pressed_again">"الرجاء النقر فوق "رجوع" مرة أخرى للخروج"</string>
+
+</resources>
+   

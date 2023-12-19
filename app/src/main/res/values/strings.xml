@@ -1,0 +1,238 @@
+<resources>
+    <string name="app_name">Mualij Pro</string>
+    <string name="txt_something_went_wrong">Something went wrong, please try again</string>
+    <string name="txt_no_internet_connection">No internet connection.</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDHEAdEYJZRkA3Lsh9TQ6Ib4WgB1EqgzVo</string>
+
+    <string name="txt_google_ads_key">ca-app-pub-6730484169769137~1989369010</string>
+    <string name="txt_countly_key">99686346d45608c8c496416cc32b8978fe80033a</string>
+    <string name="txt_countly_base_url">https://us-try.count.ly</string>
+
+    <string name="txt_auth_sign_in">Sign in</string>
+    <string name="txt_auth_sign_in_decs">to your account</string>
+    <string name="txt_auth_email_hint">email@email.com</string>
+    <string name="txt_auth_password_hint">password</string>
+    <string name="txt_auth_forgot_pass">Forgot your password?</string>
+    <string name="txt_auth_forgot_pass_title">Forgot Password</string>
+
+    <string name="txt_setting_weekly_schedule">Weekly schedule</string>
+    <string name="txt_setting_my_appointments">My Appointments</string>
+    <string name="txt_setting_date">Today</string>
+    <string name="txt_setting_profile">Profile</string>
+    <string name="txt_setting_settings">Settings</string>
+    <string name="txt_setting_password">Password</string>
+    <string name="txt_setting_statistics">Statistics</string>
+    <string name="txt_setting_logout">Logout</string>
+    <string name="txt_setting_monday">MONDAY</string>
+    <string name="txt_setting_tuesday">TUESDAY</string>
+    <string name="txt_setting_wednesday">WEDNESDAY</string>
+    <string name="txt_setting_thursday">THURSDAY</string>
+    <string name="txt_setting_friday">FRIDAY</string>
+    <string name="txt_setting_saturday">SATURDAY</string>
+    <string name="txt_setting_sunday">SUNDAY</string>
+    <string name="txt_setting_start_time">Start time</string>
+    <string name="txt_setting_end_time">End time</string>
+    <string name="txt_setting_time_per_section">TIME PER SECTION</string>
+    <string name="txt_setting_lap_per_section">LAP PER SECTION</string>
+    <string name="txt_minutes">minutes</string>
+    <string name="txt_update">UPDATE</string>
+    <string name="txt_am">AM</string>
+    <string name="txt_pm">PM</string>
+    <string name="txt_err_msg_password">Password cannot be empty</string>
+    <string name="txt_err_msg_email">Valid email required</string>
+
+    <string name="txt_alert_internet_connection">No internet connection available</string>
+    <string name="txt_alert_information">Error!</string>
+    <string name="txt_alert_success_information">Success</string>
+    <string name="txt_search">Search</string>
+
+    <string name="txt_profile_first_name">First Name</string>
+    <string name="txt_profile_last_name">Last Name</string>
+    <string name="txt_profile_gender">Gender</string>
+    <string name="txt_profile_gender_male">Male</string>
+    <string name="txt_profile_gender_female">Female</string>
+    <string name="txt_profile_phone_number">Phone Number</string>
+    <string name="txt_profile_email">Email</string>
+    <string name="txt_profile_clinic_address">Clinic Address</string>
+    <string name="txt_profile_language_spoken">Language Spoken</string>
+    <string name="txt_profile_personal_statement">Professional Statement</string>
+    <string name="txt_profile_education">Education</string>
+    <string name="txt_profile_board_certification">Board Certifications</string>
+    <string name="txt_alert_something_went_wrong_with_image">Something went wrong with image, please try again or try
+        different image
+    </string>
+    <string name="txt_permission_alert_title">Permission Denied</string>
+    <string name="txt_permission_alert_desc">Go to settings in order to allow your permission</string>
+    <string name="txt_settings">Settings</string>
+
+    <string name="txt_title_image_picker">Select Action</string>
+    <string name="txt_cancel">Cancel</string>
+    <string name="txt_choose_gallery">Choose from Gallery</string>
+    <string name="txt_open_camera">Open Camera</string>
+    <string name="txt_logout_confirmation">Are you sure to logout?</string>
+    <string name="txt_cancel_appointment_confirmation">Are you sure to cancel this appointment?</string>
+    <string name="txt_yes">Yes</string>
+    <string name="txt_no">No</string>
+    <string name="txt_done">Done</string>
+    <string name="txt_confirmation">Confirmation!</string>
+    <string name="txt_logout">Logout</string>
+
+    <string name="txt_err_msg_first_name">First name required</string>
+    <string name="txt_err_msg_last_name">Last name required</string>
+    <string name="txt_err_msg_address">Address cannot be empty</string>
+    <string name="txt_err_msg_phone">Valid phone number required</string>
+    <string name="txt_setting_day_error">Minimum one day should be selected</string>
+    <string name="txt_setting_time_per_section_err">Time per section cannot be empty</string>
+    <string name="txt_setting_lap_per_section_err">Lap per section cannot be empty</string>
+
+    <string name="txt_setting_start_n_end_time_err">Start and end time should not be empty of selected day</string>
+
+    <string name="txt_old_password">old password</string>
+    <string name="txt_new_password">new password</string>
+    <string name="txt_retype_password">retype new password</string>
+    <string name="txt_type_old_password">type old password</string>
+    <string name="txt_type_new_password">type new password</string>
+
+    <string name="txt_change_pass_error">Password cannot be empty</string>
+    <string name="txt_change_new_pass_error">New password cannot be empty</string>
+    <string name="txt_change_retype_pass_error">New password did not match with retype password</string>
+
+    <string name="txt_header_appoinment_title">My Appointments</string>
+    <string name="txt_header_profile_title">Profile Settings</string>
+    <string name="txt_header_settings_title">Weekly Schedule</string>
+    <string name="txt_header_statistics_title">Statistics</string>
+    <string name="txt_header_change_pass_title">Change Password</string>
+    <string name="txt_no_result_found">No data found</string>
+
+    <string name="txt_detail">Detail</string>
+    <string name="txt_re_schedule">Reschedule</string>
+    <string name="txt_add_prescription">Add Prescription</string>
+    <string name="txt_medication">Medication</string>
+    <string name="txt_chat">Chat</string>
+    <string name="txt_re_check_in">Recheck In</string>
+    <string name="txt_age">Age</string>
+    <string name="txt_medicine">Medicine</string>
+    <string name="txt_type">Type</string>
+    <string name="txt_frequency">Frequency</string>
+    <string name="txt_dose">Dose</string>
+    <string name="txt_days">Days</string>
+    <string name="txt_prescription">Prescription</string>
+    <string name="txt_save">Save</string>
+    <string name="txt_add">Add</string>
+    <string name="txt_reset">Reset</string>
+    <string name="txt_no_appointment_found">No appointment available</string>
+    <string name="txt_reschedule_title">Reschedule</string>
+    <string name="txt_date">Date:</string>
+    <string name="txt_no_available_schedule">No available schedule</string>
+    <string name="txt_reschedule_error">Please select available time to reschedule</string>
+    <string name="txt_report_patient">Do you want to report this patient?</string>
+    <string name="txt_prescription_pdf_error">Create/Update prescription first then you can share</string>
+    <string name="txt_prescription_delete_error">Minimum one prescription should be added</string>
+    <string name="txt_day">Day</string>
+
+    <string name="txt_after">after</string>
+    <string name="txt_for">for</string>
+    <string name="txt_ad">Ad</string>
+
+    <string name="txt_reason">Write your reason here</string>
+    <string name="txt_report_patient_title">Report a patient</string>
+    <string name="txt_report">Report</string>
+
+    <string name="txt_city_title">City</string>
+    <string name="txt_select_city">Select city</string>
+
+    <string name="txt_today">Today</string>
+    <string name="txt_tomorrow">Tomorrow</string>
+
+    <string name="txt_set_all_days">Set All Days</string>
+    <string name="txt_settings_set_all_days_data">Are you sure to set all remaining days timing as first active day?</string>
+
+    <string name="txt_online_fee">Online Fee</string>
+    <string name="txt_online_availability">Online Availability</string>
+
+    <string name="txt_chat_ended">Chat has ended</string>
+    <string name="txt_type_your_msg">Type your message</string>
+    <string name="txt_joined">has joined</string>
+    <string name="txt_slide_to_cancel">Slide To Cancel</string>
+    <string name="txt_chat_report_patient">Report patient</string>
+
+    <string name="socket_reconnect">Socket reconnect</string>
+    <string name="socket_reconnecting">Socket reconnecting</string>
+    <string name="socket_reconnect_error">Socket reconnection error</string>
+    <string name="socket_disconnect_error">Socket connection is interrupted</string>
+    <string name="socket_connection_error_occurred">Socket connection error occurred</string>
+    <string name="socket_connection_error">Failed to connect please try again</string>
+    <string name="socket_connection_timeout">Socket connection timeout</string>
+    <string name="socket_error_occurred">Socket error occurred</string>
+    <string name="something_went_wrong_with_socket_connection">Something went wrong with socket connection</string>
+    <string name="socket_request_connection_fail">Socket request timeout, try again</string>
+
+    <string name="txt_new_picture">New picture</string>
+    <string name="txt_from_camera">From your camera</string>
+
+    <string name="txt_you_have_joined">You have joined</string>
+    <string name="txt_doctor_online">Doctor has joined</string>
+    <string name="txt_typing">typing.....</string>
+    <string name="txt_remove_msg_confirmation">Are you sure to delete this message?</string>
+
+    <string name="txt_media_gallery">Media Gallery</string>
+
+    <string name="txt_recording_alert">You are recording some audio please send/stop/cancel first then you can play/pause audio from messages.</string>
+    <string name="txt_recording_permission_error">Go to settings in order to allow your recording permission</string>
+
+    <string name="txt_video_lenght_error">Video cannot be greater then 30 seconds</string>
+    <string name="txt_month">Month</string>
+    <string name="txt_year">Year</string>
+
+    <string name="txt_total_appointments">Total Appointments</string>
+    <string name="txt_earning_month">Earning this month</string>
+    <string name="txt_total_earning">Total earning</string>
+    <string name="txt_total">Total</string>
+    <string name="txt_appointments_by_types">Appointments by type</string>
+    <string name="txt_revenue_progress">Revenue progress</string>
+    <string name="txt_appointments_by_time">Appointments by time</string>
+    <string name="txt_appointments_progress">Appointments progress</string>
+
+    <string name="txt_off_time">offtime</string>
+    <string name="txt_on_time">ontime</string>
+    <string name="txt_past">past</string>
+    <string name="txt_upcoming">upcoming</string>
+
+    <string name="txt_jan">Jan</string>
+    <string name="txt_feb">Feb</string>
+    <string name="txt_mar">Mar</string>
+    <string name="txt_apr">Apr</string>
+    <string name="txt_may">May</string>
+    <string name="txt_jun">Jun</string>
+    <string name="txt_jul">Jul</string>
+    <string name="txt_aug">Aug</string>
+    <string name="txt_sep">Sep</string>
+    <string name="txt_oct">Oct</string>
+    <string name="txt_nov">Nov</string>
+    <string name="txt_dec">Dec</string>
+
+    <string name="txt_all">All</string>
+
+    <string name="txt_unknown_request"></string>
+    <!--    <string name="txt_unknown_request">Trying to access unknown request or something went wrong, please try again later</string>-->
+    <string name="txt_blocked">Too many wrong attempts, please contact to support or try again later</string>
+
+    <string name="txt_request_limit_exceed">Your request limit has exceeded. Please try again later</string>
+    <string name="txt_complete_appointment">Complete</string>
+    <string name="txt_complete_appointment_confirmation">Are you sure you want to complete this appointment?</string>
+    <string name="txt_current_time">Current Time:</string>
+
+    <string name="txt_maintenance">Maintenance</string>
+    <string name="txt_maintenance_sub">Maintenance Maintenance Maintenance Maintenance Maintenance Maintenance Maintenance</string>
+    <string name="txt_audio_lenght_error">Recording cannot be greater then 2 minutes</string>
+    <string name="txt_chat_not_started_prescription_add">You cannot add prescription on not completed appointments</string>
+    <string name="txt_chat_not_started_complete_add">You cannot complete appointments before designated time or ongoing appointments</string>
+    <string name="txt_please_wait_file_uploading" translatable="false">Please wait file is uploading....</string>
+    <string name="txt_please_wait_file_is_prepared" translatable="false">Please wait file is being prepared..</string>
+    <string name="txt_trim_video" translatable="false">Video Trim</string>
+    <string name="tv_please_wait_file_is_uploading" translatable="false">Please wait file is uploading..</string>
+    <string name="tv_please_wait_file_is_prepared" translatable="false">Please wait file is being prepared..</string>
+
+    <string name="back_pressed_again">Please click BACK again to exit</string>
+
+</resources>

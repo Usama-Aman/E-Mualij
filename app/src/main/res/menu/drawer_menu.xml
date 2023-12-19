@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:id="@+id/appointmentGroup"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_my_appointments"
+            android:icon="@drawable/ic_appointment"
+            android:title="@string/txt_header_appoinment_title" />
+    </group>
+
+    <group
+        android:id="@+id/statsGroup"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_statistics"
+            android:icon="@drawable/ic_statistics_sel"
+            android:title="@string/txt_header_statistics_title" />
+    </group>
+
+    <group
+        android:id="@+id/weekGroup"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_setting_sel"
+            android:title="@string/txt_header_settings_title" />
+    </group>
+
+    <group
+        android:id="@+id/profileGroup"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_profile_sel"
+            android:title="@string/txt_header_profile_title" />
+    </group>
+
+    <group
+        android:id="@+id/changePasswordGroup"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_change_password"
+            android:icon="@drawable/ic_password_sel"
+            android:title="@string/txt_header_change_pass_title" />
+    </group>
+
+    <group
+        android:id="@+id/logoutGroup"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_log_out"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/txt_logout" />
+
+    </group>
+
+
+</menu>

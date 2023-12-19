@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" tools:ignore="MissingDefaultResource">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_23sdp"
+            android:background="@color/app_default_color">
+
+        <RelativeLayout
+                android:id="@+id/rlHeaderLogo"
+                android:layout_alignParentLeft="true"
+                android:background="@color/app_default_dark_color"
+                android:layout_width="@dimen/_55sdp"
+                android:layout_height="match_parent">
+
+            <ImageView
+                    android:layout_width="@dimen/_40sdp"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:background="@drawable/ic_small_logo"
+                    android:layout_height="match_parent"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:id="@+id/rlHeaderTitle"
+                android:layout_toRightOf="@+id/rlHeaderLogo"
+                android:layout_width="wrap_content"
+                android:paddingLeft="@dimen/_10sdp"
+                android:layout_height="match_parent">
+
+            <RelativeLayout
+                    android:id="@+id/rlHeaderTitleIcon"
+                    android:layout_width="@dimen/_13sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/bg_green_rounded_corner"
+                    android:layout_height="@dimen/_13sdp">
+
+                <ImageView
+                        android:id="@+id/ivHeaderTitleIcon"
+                        android:layout_centerInParent="true"
+                        android:layout_width="match_parent"
+                        android:layout_margin="@dimen/_2sdp"
+                        app:srcCompat="@drawable/ic_setting_sel"
+                        android:layout_height="match_parent"/>
+
+            </RelativeLayout>
+
+            <TextView
+                    android:id="@+id/tvHeaderTitle"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_7sdp"
+                    android:text="@string/txt_setting_weekly_schedule"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_toRightOf="@+id/rlHeaderTitleIcon"
+                    android:fontFamily="@font/sharp_sans_medium"
+                    android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <View
+                android:id="@+id/viewSep"
+                android:layout_width="0.1dp"
+                android:layout_toRightOf="@+id/rlHeaderTitle"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:background="@color/white"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_height="match_parent"/>
+
+        <RelativeLayout
+                android:id="@+id/rlHeaderDate"
+                android:layout_toRightOf="@+id/viewSep"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+            <RelativeLayout
+                    android:id="@+id/rlHeaderDateIcon"
+                    android:layout_width="@dimen/_13sdp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/bg_green_rounded_corner"
+                    android:layout_height="@dimen/_13sdp">
+
+                <ImageView
+                        android:layout_centerInParent="true"
+                        android:layout_width="match_parent"
+                        android:layout_margin="@dimen/_2sdp"
+                        app:srcCompat="@drawable/ic_date"
+                        android:layout_height="match_parent"/>
+
+            </RelativeLayout>
+
+            <TextView
+                    android:id="@+id/tvHeaderDateTitle"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_6sdp"
+                    android:text="Today \n26/08/2019"
+                    android:layout_marginLeft="@dimen/_5sdp"
+                    android:layout_toRightOf="@+id/rlHeaderDateIcon"
+                    android:fontFamily="@font/sharp_sans_medium"
+                    android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+                android:layout_alignParentRight="true"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:layout_height="match_parent">
+
+            <RelativeLayout
+                    android:id="@+id/rlHeaderProfile"
+                    android:layout_width="@dimen/_16sdp"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="match_parent">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/ivHeaderProfile"
+                        android:layout_width="@dimen/_15sdp"
+                        android:layout_centerInParent="true"
+                        android:layout_height="@dimen/_15sdp"
+                        android:src="@drawable/profile_placeholder"
+                        tools:ignore="VectorDrawableCompat"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                    android:id="@+id/rlHeaderSettings"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_3sdp"
+                    android:layout_toLeftOf="@+id/rlHeaderProfile"
+                    android:layout_height="match_parent">
+
+                <ImageView
+                        android:layout_centerInParent="true"
+                        android:layout_width="@dimen/_9sdp"
+                        app:srcCompat="@drawable/ic_setting_sel"
+                        android:layout_height="@dimen/_9sdp"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
